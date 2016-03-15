@@ -1,6 +1,6 @@
 
-CC=/usr/local/gcc-4.8.0-qt-4.8.4-for-mingw32/win32-gcc/bin/i586-mingw32-gcc
-# CFLAGS+=-O2
+OS := $(shell uname -s)
+include Makefiles/$(OS).mk
 
 default: hindsight.exe socket.exe window.exe nttime.exe
 

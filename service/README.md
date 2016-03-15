@@ -2,6 +2,15 @@
 <!--
 -->
 
+TODO
+----
+
+ * Add HTTP interface
+ * Add TCL/socket interface for configuration
+
+Notes
+------
+
 Notes on adding a service to the service control manager.
 
  * [How to: Add Installers to Your Service Application]( https://msdn.microsoft.com/en-us/library/ddhy0byf(v=vs.110).aspx )
@@ -23,4 +32,5 @@ getaddrinfo
 -----------
 
  * [getaddrinfo function]( https://msdn.microsoft.com/en-us/library/windows/desktop/ms738520(v=vs.85).aspx )
+
 <!-- vim: set autoindent expandtab sw=4 syntax=markdown: -->
