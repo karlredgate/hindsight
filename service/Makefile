@@ -5,8 +5,8 @@ include Makefiles/$(OS).mk
 default: hindsight.exe socket.exe window.exe nttime.exe
 
 CLEANS += hindsight.exe
-hindsight.exe: hindsight.o
-	$(CC) $(CFLAGS) -o hindsight.exe hindsight.o
+hindsight.exe: hindsight.o command.o
+	$(CC) $(CFLAGS) -o $@ $< -ltcl
 
 CLEANS += socket.exe
 socket.exe: socket.o
