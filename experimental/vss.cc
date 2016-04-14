@@ -1,7 +1,11 @@
 
 #include <windows.h>
+#include <vss.h>
 
-extern "C" int __cdecl
-wmain( __in int argc, __int_ecount(argc) WCHAR **argv ) {
+int
+main( int argc, char **argv ) {
+    DWORD context = VSS_CTX_BACKUP;
     return 0;
 }
+
+/* vim: set autoindent expandtab sw=4 : */
